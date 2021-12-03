@@ -3,12 +3,12 @@
 #include <string.h>
 #include <sdlib.h>
 
-
-
-int main (argc, argv[]){
-//dichiarazione della variabile riga che deve contenere 30 caratteri
-char *riga[256];
-int x;
+int main (argc, argv[])
+{
+//dichiarazione della variabile riga che deve contenere numero caratteri passati in argv[2]
+char *riga[];
+//dichiarazione della variabile nc che deve contenere i numero di caratteri della colonna
+int nc
 FILE *fh;
 //controllo sugli argomenti passati perché argv[1] è l'articolo da aprire e in argv[2] c'è il numero di caratteri di una riga da incolonnare
     if (argc<2){printf("Non hai messo il nome dell'articolo\n");exit (-1);}
@@ -22,5 +22,5 @@ FILE *fh;
         printf("%s", riga);
     }
     fclose(fh);
-    return x;
+    return (0);
 }
