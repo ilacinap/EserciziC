@@ -23,9 +23,8 @@ int carcol
 //ipotizzando che alla fine del file 'articolo' ci sia un NULL 
 //utilizzare un ciclo while che vada a leggere il file fino al null e stampi le righe per stringhe del numero di caratteri in argv[2]
     while (fgets(riga, sizeof(riga),fh)!=NULL){
-        printf("%\n", &(riga));
+        printf("%\n", &(riga[carcol]));
         carcol==carcol+carcol;
-        riga==riga[carcol];
     }
     fclose(fh);
     return(0)
